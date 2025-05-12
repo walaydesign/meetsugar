@@ -1,0 +1,3704 @@
+
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="交友平台 | 聊天配對 | 遇見甜心" />
+    <meta name="description" content="遇見甜心是台灣最多人使用的新世代男女交友平台，我們提供優質都會男女交流管道，許多 Daddy 與 Baby 都在這裡甜蜜相遇了，快來進行一場浪漫邂逅吧。" />
+    <meta name="og:description" content="遇見甜心是台灣最多人使用的新世代男女交友平台，我們提供優質都會男女交流管道，許多 Daddy 與 Baby 都在這裡甜蜜相遇了，快來進行一場浪漫邂逅吧。" />
+    <meta property="og:title" content="遇見甜心交友網 - 台灣高端包養網站 | 輕鬆找到成熟理想的約會對象" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="遇見甜心交友網 - 台灣高端包養網站 | 輕鬆找到成熟理想的約會對象" />
+    <meta property="og:url" content=" "/>
+    <meta property="og:image" content="https://meet-sugar.net/common/new/images/logo.png"/>
+    <meta name="author" content="" />
+    <meta name="google" content="notranslate">
+    <link rel="icon" type="image" href="https://meet-sugar.net/common/new/images/favicon.ico" />
+    <title>遇見甜心交友網 - 台灣高端包養網站 | 輕鬆找到成熟理想的約會對象</title>
+
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/main.css?v=1747032050">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/icons.v.1.3.css">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/grid.min.css">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/nouislider.min.css">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/moon-bears-main.css?v=1747032050">
+    <link rel="stylesheet" href="https://meet-sugar.net/common/new/assets/css/main2025.css?v=1747032050">
+    <link rel="stylesheet" href="../common/new/assets/css/progress.css">
+
+    <style type="text/css">
+        @media (min-width: 1023.98px) {
+          .member-info .p-cc.g-1 {
+            display: grid;
+          }
+        }
+        @media (max-width: 1023.98px) {
+          .member-info .p-cc.g-1 {
+            display: unset;
+          }
+        }
+    </style>
+
+    <style type="text/css">
+        .swal2-title {
+            font-size: 1.4em !important;
+        }
+        .blurred {
+            filter: blur(10px); /* 設置模糊 */
+        }
+        .text-overlay {
+            position: absolute; /* 絕對定位到容器內部 */
+            top: 44%; /* 垂直居中 */
+            left: 50%; /* 水平居中 */
+            transform: translate(-50%, -50%); /* 完全居中對齊 */
+            color: red !important; /* 白色文字 */
+            font-size: 16px; /* 文字大小 */
+            z-index: 1; /* 保證文字在圖片上方 */
+            pointer-events: none; /* 禁止文字干擾點擊 */
+        }
+        .avatar-notice {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /*去除表頭多於空白*/
+        .page-title {
+            height: 80px;
+        }
+        .cont-container {
+            margin-top: -40px !important;
+        }
+
+        /*選單內暱稱*/
+        .n-menu-edit-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: auto;
+            margin-bottom: -35px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <style type="text/css">
+        /* 主容器樣式 */
+        .custom-pswp-ui .pswp__bg {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        /* 隱藏頂部和底部默認 UI 元素 */
+        .custom-pswp-ui .pswp__top-bar {
+            background-color: transparent;
+        }
+
+        .custom-pswp-ui .pswp__button--zoom,
+        .custom-pswp-ui .pswp__button--fs,
+        .custom-pswp-ui .pswp__button--share,
+        .custom-pswp-ui .pswp__caption {
+            display: none;
+        }
+
+        /* 自定義關閉按鈕 */
+        .pswp__button--custom-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .pswp__button--custom-close:hover {
+            opacity: 1;
+        }
+
+        /* 圖片容器樣式 */
+        .pswp__img {
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 調整圖片位置 */
+        .pswp__zoom-wrap {
+            transform-origin: center center !important;
+        }
+
+        .modal-container.mail-modal .modal:after, .modal-container.day-modal .modal:after, .modal-container.user-photo-modal .modal:after, .modal-container.vip-a-modal .modal:after, .modal-container.vip-b-modal .modal:after, .modal-container.phone-modal .modal:after, .modal-container.line-modal .modal:after {
+            left: -1.5rem !important;
+        }
+        .m-content {
+            min-height: 20rem !important;
+            right: -10px;
+        }
+        .message-imgs-item {
+            top: 80px;
+        }
+        @media (min-width: 1023.98px) {
+            .modal-container .modal-outer {
+                margin: 15rem auto !important;
+            }
+        }
+
+        /*online tag*/
+        .cd-online.orange span.circle {
+            background: radial-gradient(#ff9600, #d36c00) !important;
+        }
+        .cd-online.yellow span.circle {
+            background: radial-gradient(#ffd100, #c7a700) !important;
+        }
+        .member-info .if-online.orange::before {
+            background-color: #ff9600;
+        }
+        .member-info .if-online.yellow::before {
+            background-color: #ffd100;
+        }
+    </style>
+
+    <!-- Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://meet-sugar.net/common/js/jquery-3.6.3.js"></script>
+
+    <script src="https://meet-sugar.net/common/js/sweetalert_common.js"></script>
+    <script src="https://meet-sugar.net/common/plugins/bower_components/sweetalert/sweetalert2-11/sweetalert2.js?v=1747032050"></script>
+    <link rel="stylesheet" href="https://meet-sugar.net/common/plugins/bower_components/sweetalert/sweetalert2-11/sweetalert2.min.css">
+
+    <script type="text/javascript">
+        var myvip = "1";
+        var mygender = "0";
+        function isvip(target = '', msg = '請先成為VIP！', blank = false)
+        {
+            if(myvip == 0) {
+                SwalAlert.SwalWarning(msg);
+                setTimeout(function(){
+                    var url = "";
+                    if(mygender == 0) {
+                        url='https://meet-sugar.net/member/profilepic';
+                    } else {
+                        url='https://meet-sugar.net/member/vip';
+                    }
+
+                    if(blank) {
+                        window.open(url);
+                    } else {
+                        window.location.href = url;
+                    }
+
+                }, 2000);
+                return false;
+            } else {
+                if(target != '') {
+                    window.location.href=target;
+                }
+                return true;
+            }
+        }
+    </script>
+
+</head>
+
+<body class="-index">
+<nav>
+    <div class="nav-container container">
+
+        <div class="nav-toggle c-btn j-nav-toggle">
+            <span></span>
+        </div>
+
+        <a href="javascript:void(0)" class="nav-logo">
+            <img class="white-img" src="https://meet-sugar.net/common/new/images/logo.png" alt="" onclick="window.location.href='https://meet-sugar.net/member/home'">
+        </a>
+
+        <div class="nav-notification-item g-2">
+
+            <a href="https://meet-sugar.net/member/home" class="nav-home lg-up-hid">
+                <div class="nav-nm">
+                    <i class="icon-home-strokes"></i>
+                </div>
+            </a>
+
+
+            <a href="https://meet-sugar.net/member/notify" class="nav-notification">
+                <div class="nav-nm">
+                    <i class="icon-notification-strokes"></i>
+                    <span class="num-messages j-emptys" id="notify-num" notify-num="6">6</span>
+                </div>
+            </a>
+
+
+            <a href="https://meet-sugar.net/member/inbox" class="nav-message">
+                <div class="nav-nm">
+                    <i class="icon-message-empty-strokes"></i>
+                    <span class="num-messages j-emptys" id="chat-num" chat-num="0"></span>
+                </div>
+            </a>
+
+            <!--             <a href="javascript:void(0)" onclick="isvip('https://meet-sugar.net/member/posts', '請先成為免費vip後可解鎖此功能！')" class="nav-note lg-up-hid">
+             -->
+            <a href="https://meet-sugar.net/member/posts" class="nav-note lg-up-hid">
+                <div class="nav-nm">
+                    <i class="icon-note-strokes"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="nav-menu j-nav-menu">
+
+            <div class="n-menu-container g-1">
+
+                <a href="javascript:void(0)" class="n-menu-user">
+                    <!--                         <img src="https://meet-sugar.net/upload/images/avatar/8-1739012566.jpg" alt="" onclick="javascript:window.location.href='https://meet-sugar.net/member/profilepic'">
+                     -->
+
+                    <div class="menu-img-item">
+                                                    <img src="https://meet-sugar.net/upload/images/avatar/8-1739012566.jpg" alt="" onclick="javascript:window.location.href='https://meet-sugar.net/member/profilepic'">
+                                            </div>
+
+                    <span class="n-menu-edit-name" style="cursor: default;">www</span>
+                    <a class="n-menu-edit-btn" href="https://meet-sugar.net/member/self">
+                    <i class="icon-pen-strokes"></i>我的檔案</a>
+                </a>
+
+                <!-- n-menu-mi -->
+
+                <div class="n-menu-min">
+
+                    <a href="https://meet-sugar.net/member/home">
+                        <div class="link-a">
+                            <span>首頁</span>
+                            <i class="icon-home-strokes"></i>
+                        </div>
+                    </a>
+
+                                            <a href="https://meet-sugar.net/member/verify/pic">
+                            <div class="link-a">
+                                <span>本人照驗證</span>
+                                <i class="icon-user-strokes"></i>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="isvip('https://meet-sugar.net/member/profilevideo', '請先成為免費vip後可解鎖此功能！')">
+                            <div class="link-a">
+                                <span>影音短片</span>
+                                <i class="icon-camera-strokes"></i>
+                            </div>
+                        </a>
+                    
+                    
+                    <a href="javascript:void(0)" onclick="javascript:$('.mail-btn').click();">
+                        <div class="link-a">
+                            <span>配對打招呼</span>
+                            <i class="icon-map-mark-strokes"></i>
+                        </div>
+                    </a>
+
+                    <!--                     <a href="javascript:void(0)" onclick="isvip('https://meet-sugar.net/member/posts', '請先成為免費vip後可解鎖此功能！')">
+                     -->
+                    <a href="https://meet-sugar.net/member/posts">
+                        <div class="link-a">
+                            <span>動態貼文</span>
+                            <i class="icon-note-strokes"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://meet-sugar.net/member/search">
+                        <div class="link-a">
+                            <span>搜尋</span>
+                            <i class="icon-search-strokes"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://meet-sugar.net/member/ilike">
+                        <div class="link-a">
+                            <span>我的最愛</span>
+                            <i class="icon-heart-strokes"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://meet-sugar.net/member/wholike">
+                        <div class="link-a">
+                            <span>誰喜歡你</span>
+                            <i class="icon-smile-strokes"></i>
+                        </div>
+                    </a>
+
+                    <!--<a href="https://meet-sugar.net/member/wholook">-->
+                    <!--    <div class="link-a">-->
+                    <!--        <span>誰看過我</span>-->
+                    <!--        <i class="icon-visibility-strokes"></i>-->
+                    <!--    </div>-->
+                    <!--</a>-->
+
+
+                    <a href="https://meet-sugar.net/member/setting">
+                        <div class="link-a">
+                            <span>進階設定</span>
+                            <i class="icon-setting-strokes"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="n-menu-close j-n-menu-close c-btn">
+               <img src="https://meet-sugar.net/common/new/images/icon-history-back-button-w.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- the heart shape is only used for the main background images on the homepage -->
+    <div class="container nav-heart-bg">
+        <div class="heart-svg-item -left">
+            <img class="svg-heart -b" src="https://meet-sugar.net/common/new/images/heart.svg" alt="">
+            <img class="svg-heart -s" src="https://meet-sugar.net/common/new/images/heart.svg" alt="">
+        </div>
+
+        <div class="heart-svg-item -right">
+            <img class="svg-heart -b" src="https://meet-sugar.net/common/new/images/heart.svg" alt="">
+            <img class="svg-heart -s" src="https://meet-sugar.net/common/new/images/heart.svg" alt="">
+        </div>
+    </div>
+
+    <div class="nav-mask j-nav-mask"></div>
+
+
+</nav>
+
+
+
+<div class="home-key-bg">
+        <div class="main-line"></div>
+        <div class="body-bg"></div>
+</div>
+
+<style type="text/css">
+/* 預設隱藏按鈕 */
+#search-more {
+    display: none;
+}
+
+/* 當螢幕寬度小於 768px（手機）時，顯示按鈕 */
+@media (max-width: 768px) {
+    #search-more {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .fixed-tab {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+}
+</style>
+
+<main>
+    <div class="container -content -g -gap">
+        <!-- <div class="warning-top-item flex" style="margin-top: -60px; margin-bottom: -40px;">
+            <i class="icon-warning-strokes"></i>
+            <p>請勿與剛認識的人有任何金錢或物品上的往來，根據我們的經驗，大部分為詐騙或是犯罪行為。約會見面時，慎選時間地點，選擇熟悉或人潮較多地方，見面的時間以白天為佳。</p>
+        </div> -->
+
+        
+        <div class="home-info-item g-1 g-lg-2" style="margin-top: -35px;">
+
+            <div class="home-mobile-tab g-3 lg-up-hid">
+                <div class="tab-bg"></div>
+                <button class="tab-btn c-btn scroll-top type-recommend" onclick="setPosition('recommend')">推薦會員</button>
+                <button class="tab-btn c-btn scroll-top type-active" onclick="setPosition('active')">最新登入</button>
+                <button class="tab-btn c-btn scroll-top type-new" onclick="setPosition('new')">最新註冊</button>
+            </div>
+
+            <div class="left-info-item -g -gap-sm">
+
+                <div class="user-item -showdown tab-panel">
+                    <div class="user-type g-2">
+                        <h4 class="ut-tit g-2"><i class="icon-thumbs-up-strokes reflection"></i>推薦會員</h4>
+                        <button type="button" id="recommend" onclick="homeAjax(this)"><img src="https://meet-sugar.net/common/new/images/icon-restart.svg" alt=""></button>
+                    </div>
+
+                    <div class="card-item g-2 g-xs-2 g-md-3 g-lg-4" id="recommend-box">
+
+                        
+    
+        <a href="https://meet-sugar.net/member/info/630" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/630-1737985266.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">小熊</span>
+                        <h4 class="-age">34</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/622" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/622-1737954301.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>基隆</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">CCCA</span>
+                        <h4 class="-age">35</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/648" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/648-1738412892.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">XXVV</span>
+                        <h4 class="-age">38</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1204" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1204-1740442244.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">麥大叔</span>
+                        <h4 class="-age">48</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1309" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1309-1740504851.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">祐丞</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2055" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2055-1744519945.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>嘉義</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">楓</span>
+                        <h4 class="-age">36</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/511" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/511-1736176366.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">文德</span>
+                        <h4 class="-age">28</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/694" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/694-1738382310.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>雲林</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">K</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/667" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/667-1738369881.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Leoo</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1740" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1740-1742043674.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">阿輔</span>
+                        <h4 class="-age">43</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1434" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1434-1740991113.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Q</span>
+                        <h4 class="-age">34</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1660" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1660-1741679106.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">翔哥</span>
+                        <h4 class="-age">40</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1813" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1813-1742436967.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Wd</span>
+                        <h4 class="-age">41</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/913" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/913-1738820618.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Julian</span>
+                        <h4 class="-age">46</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1742" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1742-1742058670.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台南</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Jiang</span>
+                        <h4 class="-age">26</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/197" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/197-1742046008.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Make</span>
+                        <h4 class="-age">30</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/684" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/684-1738377516.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Dennis</span>
+                        <h4 class="-age">37</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2233" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2233-1746383484.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                                                    <img data-img="line" src="https://meet-sugar.net/common/new/images/social_line.svg" alt="">
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Yanwin</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+
+                    </div>
+
+                </div>
+
+                <div class="user-item -showdown tab-panel">
+                    <div class="user-type g-2">
+                        <h4 class="ut-tit g-2"><i class="icon-clock-strokes"></i>最新登入</h4>
+                         <button type="button" id="active" onclick="homeAjax(this)"><img src="https://meet-sugar.net/common/new/images/icon-restart.svg" alt=""></button>
+                    </div>
+
+                    <div class="card-item g-2 g-xs-2 g-md-3 g-lg-4" id="active-box">
+
+                        
+    
+        <a href="https://meet-sugar.net/member/info/1879" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online orange">
+                    <p><span class="circle"></span>3小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>3小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">kendary </span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1381" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1381-1741441911.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">紅點</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2211" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2211-1746192784.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">ALEXW</span>
+                        <h4 class="-age">34</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2378" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">富二代</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2316" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2316-1746741685.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Kd</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/796" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online orange">
+                    <p><span class="circle"></span>3小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>3小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">政哥</span>
+                        <h4 class="-age">45</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/558" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online active">
+                    <p><span class="circle"></span>上線中</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/558-1737595104.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>上線中</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">天進</span>
+                        <h4 class="-age">36</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1455" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online active">
+                    <p><span class="circle"></span>上線中</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/1455-1744683686.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                                                    <img data-img="line" src="https://meet-sugar.net/common/new/images/social_line.svg" alt="">
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>上線中</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Henry</span>
+                        <h4 class="-age">44</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/830" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Jack</span>
+                        <h4 class="-age">33</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1432" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Davidyo</span>
+                        <h4 class="-age">45</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2336" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">03</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1342" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">孟里德達書</span>
+                        <h4 class="-age">49</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2356" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online orange">
+                    <p><span class="circle"></span>3小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2356-1746967860.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新竹</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>3小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Talmud</span>
+                        <h4 class="-age">36</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1670" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">鳳梨不輸</span>
+                        <h4 class="-age">35</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/1161" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online orange">
+                    <p><span class="circle"></span>3小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>3小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">蟹老闆</span>
+                        <h4 class="-age">40</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2381" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online orange">
+                    <p><span class="circle"></span>3小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>3小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">史丹利</span>
+                        <h4 class="-age">44</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2361" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>基隆</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">yyyyyyyyyvuu</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/980" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">JackL</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+
+                    </div>
+
+                </div>
+
+                <div class="user-item -showdown tab-panel">
+                    <div class="user-type g-2">
+                        <h4 class="ut-tit g-2"><i class="icon-user-strokes"></i>最新註冊</h4>
+                         <button type="button" id="new" onclick="homeAjax(this)"><img src="https://meet-sugar.net/common/new/images/icon-restart.svg" alt=""></button>
+                    </div>
+
+                    <div class="card-item g-2 g-xs-2 g-md-3 g-lg-4" id="new-box">
+
+                        
+    
+        <a href="https://meet-sugar.net/member/info/2255" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Ji</span>
+                        <h4 class="-age">44</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2241" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新竹</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">平凡中年人</span>
+                        <h4 class="-age">44</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2232" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>高雄</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Wan</span>
+                        <h4 class="-age">35</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2283" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">堯</span>
+                        <h4 class="-age">29</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2178" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">高</span>
+                        <h4 class="-age">35</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2264" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2264-1746516768.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                                                    <img data-img="line" src="https://meet-sugar.net/common/new/images/social_line.svg" alt="">
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">阿祖</span>
+                        <h4 class="-age">43</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2307" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2307-1746716221.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--                             <img data-img="vip" src="https://meet-sugar.net/common/new/images/social_vip.svg" alt="">
+                         -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                                                    <img data-img="vip" src="https://meet-sugar.net/common/new/images/social_vip.svg" alt="">
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Klo</span>
+                        <h4 class="-age">27</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2208" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Kuei</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2362" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Lan</span>
+                        <h4 class="-age">27</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2192" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>彰化</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">J11</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2321" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>新竹</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">蕭蕭然</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2203" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台南</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">路人丁</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2277" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2277-1746556799.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台北</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Hulk Hogan</span>
+                        <h4 class="-age">39</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2302" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2302-1746703122.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>桃園</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">Frank</span>
+                        <h4 class="-age">31</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2204" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台南</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">TonyC</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2198" class="card-user">
+            <div class="card-data">
+
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台南</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">經理</span>
+                        <h4 class="-age">25</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2364" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online yellow">
+                    <p><span class="circle"></span>24小時內</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/common/sugar/static/images/selfie/mandefault.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台南</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online active">-->
+                    <!--    <p><span class="circle"></span>24小時內</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">沉迷魔芋爽</span>
+                        <h4 class="-age">38</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+        <a href="https://meet-sugar.net/member/info/2358" class="card-user">
+            <div class="card-data">
+
+                                <div class="cd-online ">
+                    <p><span class="circle"></span>近期上線</p>
+                </div>
+                
+                <!---->
+
+                                    <img src="https://meet-sugar.net/upload/images/avatar/2358-1746912460.jpg" alt="">
+                
+                <div class="card-info">
+                    <div class="card-area">
+                        <span>台中</span>
+                    </div>
+
+                    <div class="card-social-icon">
+
+                        
+                        
+                        <!--  -->
+                        <!-- 02/07九宮格女VIP Icon不顯示於男生帳號 -->
+                        
+                        
+                        
+                        <!-- <img data-img="fb" src="https://meet-sugar.net/common/new/images/social_facebook.svg" alt=""> -->
+                        <!-- <img data-img="yt" src="https://meet-sugar.net/common/new/images/social_youtube.svg" alt=""> -->
+                    </div>
+
+                    <!---->
+                    <!--<div class="card-online ">-->
+                    <!--    <p><span class="circle"></span>近期上線</p>-->
+                    <!--</div>-->
+                    <!---->
+
+                    <div class="card-name-age flex">
+                        <span class="-name">阿宗</span>
+                        <h4 class="-age">32</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    
+
+                    </div>
+
+                </div>
+
+                <button type="button" class="btn main-btn -bor load-more-btn" id="search-more" current-type="recommend" onclick="moreAjax(this)" style="margin-bottom: -50px;">看更多</button>
+            </div>
+
+            <div class="right-info-item g-1 lg-down-hid">
+
+                
+                <div class="r-item -user -showdown">
+
+                    <div class="-r-item r-top flex" onclick="window.location.href='https://meet-sugar.net/member/profilepic'" style="cursor: pointer;">
+                                                    <img src="https://meet-sugar.net/upload/images/avatar/8-1739012566.jpg" alt="">
+                                                <!--<a href="" class="more">-->
+                        <!--    <span></span>-->
+                        <!--    <span></span>-->
+                        <!--    <span></span>-->
+                        <!--</a>-->
+                    </div>
+
+                    <div class="-r-item r-user-info">
+                        <h5>www</h5>
+                        <div class="level">
+                            <p>等級：<span class="-value">12</span></p> 
+                            <div class="progress">
+                                <div class="progress_current"></div>
+                            </div>
+                        </div>
+                        <p>會員資格：<span class="-value">
+                                                                                                VIP會員
+                                                                                    </span></p>
+                        <p>個人檔案狀態：<span class="-value">
+                                                            <span style="color: blue;">已通過</span>
+                                                    </span></p>
+                        <!-- <p>已收到<span class="-value pad-lf">64</span>條訊息</p> -->
+                    </div>
+
+                    <div class="-r-item r-data">
+                        <div class="-rd">
+                            <span>喜歡妳</span>
+                            <span class="-value">3</span>
+                        </div>
+                        <div class="-rd">
+                            <span>看過妳</span>
+                            <span class="-value">72</span>
+                        </div>
+                        <div class="-rd">
+                            <span>讚美你</span>
+                            <span class="-value">0</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+
+    <button type="button" class="line-btn modals-open-btn" data-target="line-modal" style="display: none;"></button>
+    <div class="modal-container line-modal">
+        <div class="modal-outer">
+            <div class="modal">
+                <!--<div class="m-tit">接收LINE Notify即時通知?</div>-->
+                <span class="m-clear-btn line-clear-btn icon-close" onclick="setModalCookie('line-modal');"></span>
+                <div class="m-content">
+                    <div class="mc-img">
+                        <img src="https://meet-sugar.net/common/new/images/icon-modal-line.svg" alt="">
+                    </div>
+                    <div class="mc-tit">Notify即時通知?</div>
+                    <p></p>
+                    <p>這是LINE官方推出的新功能，可以將訊息推送到您的LINE中，您的LINE不會被對方知道，隱私又安全，可第一時間收到其他會員發送給您的訊息。</p>
+                    <!-- <p class="red-p">注意：私密瀏覽模式可能導致綁定失敗</p> -->
+                    <div class="modal-btn-item">
+                        <input type="button" class="m-btn modal-submit line-submit" value="前往設定" onclick="setModalCookie('line-modal');javascript:window.location.href='https://meet-sugar.net/member/setting/linenotify'">
+                        <button type="button" class="m-btn modal-btn" onclick="setModalCookie('line-modal');">取消</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="phone-btn modals-open-btn" data-target="phone-modal" style="display: none;"></button>
+    <div class="modal-container phone-modal">
+        <div class="modal-outer">
+            <div class="modal">
+                <!--<div class="m-tit">手機驗證</div>-->
+                <span class="m-clear-btn line-clear-btn icon-close" onclick="setModalCookie('phone-modal');"></span>
+                <div class="m-content">
+                    <div class="mc-img">
+                        <img src="https://meet-sugar.net/common/new/images/icon-modal-phone.svg" alt="">
+                    </div>
+                    <div class="mc-tit">手機驗證</div>
+                    <p></p>
+                    <p style="text-align: center;">為了防止詐騙，提高交友安全度，請進行手機認證，提高其他會員對您的信任度。</p>
+                    <!-- <p class="red-p">注意：私密瀏覽模式可能導致綁定失敗</p> -->
+                    <div class="modal-btn-item">
+                        <input type="button" class="m-btn modal-submit phone-submit" value="開始認證" onclick="setModalCookie('phone-modal');javascript:window.location.href='https://meet-sugar.net/member/setting/phone'">
+                        <button type="button" class="m-btn modal-btn" onclick="setModalCookie('phone-modal');">稍候</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="user-photo-btn modals-open-btn" data-target="user-photo-modal" style="display: none;"></button>
+    <div class="modal-container user-photo-modal">
+        <div class="modal-outer">
+            <div class="modal">
+                <!--<div class="m-tit">手勢照驗證或影音短片</div>-->
+                <span class="m-clear-btn line-clear-btn icon-close" onclick="setModalCookie('user-photo-modal');"></span>
+                <div class="m-content">
+                    <div class="mc-img">
+                        <img src="https://meet-sugar.net/common/new/images/icon-modal-user-photo.svg" alt="">
+                    </div>
+                    <div class="mc-tit">手勢照驗證或影音短片</div>
+                    <p></p>
+                    <ul style="width: 80%; margin: 0 auto;">
+                        <li class="flex" style="margin-bottom: 0.5rem;">使用指定動作拍照來證明妳是本人，其他會員對您的信任度會大幅度提升！</li>
+                        <p></p>
+                        <li class="flex" style="margin-bottom: 0.5rem;">上傳您充滿魅力的影音短片，不管是簡單的小動作或者聲音都可以加分喔！</li>
+                    </ul>
+                    <!-- <p class="red-p">注意：私密瀏覽模式可能導致綁定失敗</p> -->
+                    <div class="modal-btn-item">
+                        <input type="button" class="m-btn modal-submit user-photo-submit" value="驗證手勢照" onclick="setModalCookie('user-photo-modal');javascript:window.location.href='https://meet-sugar.net/member/verify/pic'">
+                        <!-- <input type="file" id="user-photo-file-up" class="m-btn modal-file-up user-photo-file-up"> -->
+                        <button type="button" class="m-btn modal-btn" onclick="setModalCookie('user-photo-modal');javascript:window.location.href='https://meet-sugar.net/member/profilevideo'">上傳影音</button>
+                        <button type="button" class="m-btn modal-btn" onclick="setModalCookie('user-photo-modal');">稍候</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="day-btn modals-open-btn" data-target="day-modal" style="display: none;"></button>
+    <div class="modal-container day-modal">
+        <div class="modal-outer">
+            <div class="modal">
+                <div class="m-tit"></div>
+                <span class="m-clear-btn day-clear-btn icon-close" style="display: none;"></span>
+                <div class="m-content" style="padding-top: 0rem;">
+                    <div class="mc-img">
+                        <img src="https://meet-sugar.net/common/new/images/icon-modal-day.svg" alt="">
+                    </div>
+                    <div class="mc-tit">連續簽到奬勵</div>
+                    <p>記得每日都要回來領取簽到奬勵。</p>
+
+                    <div class="days-card">
+                            <div class="d-card active">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>20</span>exp</p>
+                                <p class="day">第<span>1</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>25</span>exp</p>
+                                <p class="day">第<span>2</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>30</span>exp</p>
+                                <p class="day">第<span>3</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>35</span>exp</p>
+                                <p class="day">第<span>4</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>40</span>exp</p>
+                                <p class="day">第<span>5</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>45</span>exp</p>
+                                <p class="day">第<span>6</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                       
+                            <div class="d-card ">
+                                <div class="card-bg"></div>
+                                <p class="exp"><span>50</span>exp</p>
+                                <p class="day">第<span>7</span>天</p>
+                                <i class="icon-check-circle-strokes-m"></i>
+                            </div>
+                       
+                    </div>
+
+                    <button type="button" class="m-day-btn" onclick="signin()">領取簽到獎勵</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+
+<div class="go-top" id="go-top">
+    <img src="https://meet-sugar.net/common/new/images/icon-to-top.svg" alt="">
+</div>
+
+<footer class="g-center -load" style="top: 3rem !important">
+    <div class="f-menu g-3">
+        <a href="https://meet-sugar.net/privacy">隠私權政策</a>
+        <a href="https://meet-sugar.net/terms">服務條款</a>
+        <a href="https://lin.ee/rzvsV6T">聯絡客服 LINE</a>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©MeetSugar 2025</p>
+    </div>
+</footer>
+
+<audio id="ring-alert" src="https://meet-sugar.net/common/new/audio/meet.mp3?V=1747032050"></audio>
+
+<div class="tem-mark" style="bottom: 5rem; z-index: 999;">
+    <i class="icon-heart"></i>
+    <div class="p-item">
+        <p id="p-exp-title"></p>
+        <p id="p-exp"></p>
+    </div>
+</div>
+
+<div class="tem-mark-2" style="bottom: 2rem;">
+    <p id="p-day"></p>
+</div>
+
+
+<!-- 打招呼 -->
+<button type="button" class="mail-btn modals-open-btn" data-target="mail-modal" style="display: none;"></button>
+<div class="modal-container mail-modal">
+    <div class="modal-outer">
+        <div class="modal">
+            <span class="m-clear-btn line-clear-btn icon-close"></span>
+            <div class="m-content">
+                <div class="mc-img">
+                    <img src="https://meet-sugar.net/common/new/images/icon-modal-mail.svg" alt="">
+                </div>
+                <div class="mc-tit">打個招呼</div>
+                <p></p>
+                <p class="mc-center" style="text-align: center;">送出打招呼訊息給配對較高的對象，提升配對機率！</p>
+
+                <div class="modal-btn-item">
+                    <button type="button" class="m-btn modal-btn search-page" style="display: none;" onclick="sayHello();">發送</button>
+                    <input type="button" class="m-btn modal-submit mail-submit" value="發送" onclick="sayHello();">
+                    <button type="button" class="m-btn modal-btn">取消</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function redirectToExternalBrowser() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      
+      // 檢測 LINE 內建瀏覽器
+      if (ua.indexOf("Line") !== -1) {
+        // 檢測是否為 Android
+        if (/android/i.test(ua)) {
+          window.location.href = "intent://" + window.location.href.replace("https://", "").replace("http://", "") + "#Intent;scheme=https;package=com.android.chrome;end;";
+        } else {
+          // iOS 用戶
+          // iOS 用戶：嘗試先用 Chrome 開啟
+          var chromeUrl = "googlechrome://" + window.location.href.replace("https://", "").replace("http://", "");
+          var chromeWindow = window.location.href=chromeUrl;
+          
+          // 設定一個短暫的計時器來檢查是否成功跳轉
+          setTimeout(function() {
+            // 如果用戶仍在當前頁面，表示 Chrome 開啟失敗
+            if (document.hidden !== true) {
+              // 嘗試普通的方式開啟
+              var newWindow = window.open(window.location.href, "_blank");
+              
+              // 如果普通開啟方式也不行，顯示提示
+              if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                alert("無法自動開啟外部瀏覽器。請手動複製此網址，並在 Safari 或 Chrome 瀏覽器中開啟：\n\n" + window.location.href);
+              }
+            }
+          }, 500);
+        }
+      }
+    }
+    redirectToExternalBrowser();
+</script>
+
+<script>
+function openLightbox(img) {
+    initPhotoSwipe();
+    $(img).siblings('div.gallery').find('a')[0].click();
+}
+
+function openGallery(index) {
+    initPhotoSwipe();
+    $('#gallery_'+index)[0].click();
+}
+
+function ring()
+{
+    var ring_setting = "1";
+    if(ring_setting == 1) {
+        document.getElementById('ring-alert').play();
+    }
+}
+</script>
+
+<!-- PhotoSwipe 核心 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css">
+<!-- PhotoSwipe JavaScript -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.umd.min.js"></script> -->
+
+<script type="module">
+    import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe-lightbox.esm.min.js";
+
+    // 定義全域 lightbox 變數
+    let lightbox;
+
+    // 初始化 Lightbox 的函式
+    function initPhotoSwipe() {
+        // 如果已經初始化過，先銷毀再重新初始化
+        if (lightbox) {
+            lightbox.destroy();
+        }
+
+        // 重新初始化 PhotoSwipeLightbox
+        lightbox = new PhotoSwipeLightbox({
+            gallery: ".gallery",
+            children: "a",
+            pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.esm.min.js"),
+            wheelToZoom: true,
+            initialZoomLevel: 'fit',
+            clickToCloseNonZoomable: false,
+            imageClickAction: 'none',    // 改為 'none' 以自定義點擊行為
+            tapAction: 'none',          // 改為 'none' 以自定義點擊行為
+            doubleTapAction: 'none',    // 改為 'none' 以自定義點擊行為
+            zoom: {
+                wheelFactor: 0.15,
+                step: 0.5,
+            },
+            maxZoomLevel: 2,
+            allowPanToNext: true,
+            allowMouseDrag: true,
+            draggableClass: 'is-draggable',
+            dragClass: 'is-dragging'
+        });
+
+        // 添加自定義 CSS，提高優先級
+        const style = document.createElement('style');
+        style.textContent = `
+            /* 初始狀態：放大鏡游標 */
+            .pswp__img {
+                cursor: zoom-in !important;
+            }
+            /* 放大後：手掌游標，使用更高的優先級 */
+            .pswp__img.is-draggable {
+                cursor: grab !important;
+            }
+            /* 點擊抓取時：抓緊的手掌游標，使用更高的優先級 */
+            .pswp__img.is-dragging {
+                cursor: grabbing !important;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // 監聽縮放事件
+        lightbox.on('uiRegister', () => {
+            lightbox.pswp.element.addEventListener('click', (e) => {
+                const { currSlide } = lightbox.pswp;
+                
+                // 確保點擊的是圖片元素
+                if (e.target.tagName === 'IMG') {
+                    const clickPoint = {
+                        x: e.clientX,
+                        y: e.clientY
+                    };
+
+                    // 判斷當前縮放級別
+                    if (currSlide.currZoomLevel <= currSlide.zoomLevels.fit) {
+                        // 放大到最大級別
+                        currSlide.zoomTo(currSlide.zoomLevels.max, clickPoint, 300);
+                        // 確保在放大後立即添加可拖曳類別
+                        setTimeout(() => {
+                            e.target.classList.add('is-draggable');
+                        }, 50);
+                    } else {
+                        // 縮小回適合大小
+                        currSlide.zoomTo(currSlide.zoomLevels.fit, clickPoint, 300);
+                        // 縮小時移除類別
+                        e.target.classList.remove('is-draggable');
+                        e.target.classList.remove('is-dragging');
+                    }
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            });
+
+            // 添加滑鼠按下事件處理
+            lightbox.pswp.element.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'IMG' && e.target.classList.contains('is-draggable')) {
+                    e.target.classList.add('is-dragging');
+                }
+            }, true);
+
+            // 添加滑鼠釋放事件處理
+            lightbox.pswp.element.addEventListener('mouseup', (e) => {
+                if (e.target.tagName === 'IMG') {
+                    e.target.classList.remove('is-dragging');
+                }
+            }, true);
+
+            // 添加滑鼠離開事件處理
+            // lightbox.pswp.element.addEventListener('mouseleave', (e) => {
+            //     if (e.target.tagName === 'IMG') {
+            //         e.target.classList.remove('is-dragging');
+            //     }
+            // }, true);
+        });
+
+        // 監聽縮放級別變化
+        // lightbox.on('afterInit', () => {
+        //     lightbox.pswp.on('zoomLevelsUpdate', (e) => {
+        //         const { currZoomLevel, initialZoomLevel } = e.target;
+        //         const imgElement = e.target.element.querySelector('img');
+                
+        //         if (currZoomLevel > initialZoomLevel) {
+        //             imgElement.classList.add('is-draggable');
+        //         } else {
+        //             imgElement.classList.remove('is-draggable');
+        //             imgElement.classList.remove('is-dragging');
+        //         }
+        //     });
+
+        //     // 更新拖曳事件處理
+        //     lightbox.pswp.on('dragStart', (e) => {
+        //         const imgElement = lightbox.pswp.currSlide.element.querySelector('img');
+        //         if (imgElement && imgElement.classList.contains('is-draggable')) {
+        //             imgElement.classList.add('is-dragging');
+        //         }
+        //     });
+
+        //     lightbox.pswp.on('dragEnd', (e) => {
+        //         const imgElement = lightbox.pswp.currSlide.element.querySelector('img');
+        //         if (imgElement) {
+        //             imgElement.classList.remove('is-dragging');
+        //         }
+        //     });
+        // });
+
+        // 監聽圖片加載完成事件
+        lightbox.on('itemData', (e) => {
+            const { itemData } = e;
+            if (itemData.element) {
+                const imgElement = itemData.element.querySelector('img');
+                if (imgElement) {
+                    // 根據當前縮放狀態設置初始類別
+                    if (lightbox.pswp && lightbox.pswp.currSlide) {
+                        const { currZoomLevel, initialZoomLevel } = lightbox.pswp.currSlide;
+                        if (currZoomLevel > initialZoomLevel) {
+                            imgElement.classList.add('is-draggable');
+                        }
+                    }
+                }
+            }
+        });
+
+        lightbox.init();
+    }
+
+    window.initPhotoSwipe = initPhotoSwipe;
+
+    // 初次載入時初始化 Lightbox
+    $(document).ready(function () {
+        initPhotoSwipe();
+    });
+
+</script>
+
+<script type="text/javascript">
+const temMark = document.querySelector('.tem-mark');
+const temMark2 = document.querySelector('.tem-mark-2');
+
+// 打招呼
+function sayHello()
+{
+    $.ajax({
+        type: "GET",
+        url: "https://meet-sugar.net/member/sayHello",
+        data: {},
+        success: function(result)
+        {
+            result=$.parseJSON(result);
+            if(result['code']==1)
+            {
+                $("#p-exp-title").text(result['exp_title']);
+                $("#p-exp").text(result['exp']);
+
+                temMark.classList.add('active');
+
+                setTimeout(() => {
+                    temMark.classList.remove('active');
+                }, 3000);
+            } else {
+                SwalAlert.SwalWarning(result.message);
+            }
+        }
+    });
+}
+
+function updateNotify()
+{
+    $.ajax({
+        type: "GET",
+        url: "https://meet-sugar.net/member/update/notify",
+        data: {},
+        success: function(result)
+        {
+            result=$.parseJSON(result);
+            var chat_num = $('#chat-num').attr('chat-num');
+            if(result['chat_num'] > chat_num) {
+                ring();
+            }
+
+            if(result['chat_num'] > 0) {
+                $('#chat-num').text(result['chat_num']);
+                $('#chat-num').removeClass('empty-num');
+            } else {
+                $('#chat-num').text("");
+                $('#chat-num').addClass('empty-num');
+            }
+            $('#chat-num').attr('chat-num', result['chat_num']);
+
+            if(result['notify_num'] > 0) {
+                $('#notify-num').text(result['notify_num']);
+                $('#notify-num').removeClass('empty-num');
+            } else {
+                $('#notify-num').text("");
+                $('#notify-num').addClass('empty-num');
+            }
+            $('#notify-num').attr('chat-num', result['notify_num']);
+        }
+    });
+}
+
+setInterval(function(){
+    updateNotify();
+}, 3000);
+
+const modalsOpenBtn = document.querySelectorAll('.modals-open-btn');
+
+modalsOpenBtn.forEach((btn)=>{
+    btn.addEventListener('click',()=>{
+        const modal = document.querySelector(`.${btn.dataset.target}`);
+        if(modal){
+            modal.classList.toggle('active');
+        }
+    })
+})
+
+// Mail Modal
+const mail = document.querySelectorAll('.mail-modal');
+mail.forEach((modal) => {
+    modal.querySelectorAll('.m-clear-btn, .modal-btn, .mail-submit').forEach((btn) => {
+        // 當按鈕被點擊時，移除其對應 `modal` 的 `active` 類別，使其隱藏
+        btn.addEventListener('click', () => modal.classList.remove('active'));
+    });
+});
+
+</script><script type="text/javascript">
+/**
+ * 获取Web客户端的经纬度
+ * @param {function} successCallback - 成功获取到位置后的回调函数，参数为位置对象
+ * @param {function} errorCallback - 获取位置失败后的回调函数，参数为错误对象
+ */
+function getClientLocation(successCallback, errorCallback) {
+    // 检查浏览器是否支持Geolocation API
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                var location = {
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude
+                };
+                successCallback(location);
+            },
+            function (error) {
+                $('#distance').text("請允許裝置定位");
+                errorCallback(error);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            }
+        );
+    } else {
+        $('#distance').text("請允許裝置定位");
+        errorCallback(new Error("Geolocation is not supported by this browser."));
+    }
+}
+
+function saveLocation(latitude, longitude)
+{
+    $.ajax({
+        type: "POST",
+        url: "https://meet-sugar.net/member/save/location",
+        data: {
+            latitude: latitude,
+            longitude: longitude,
+        },
+        success: function(result)
+        {
+            result=$.parseJSON(result);
+            if(result['code']==1)
+            {
+                console.log('Update location');
+            } else {
+                console.log(result.message);
+            }
+        }
+    });
+}
+
+// 示例用法
+getClientLocation(
+    function (location) {
+        console.log("經度: " + location.latitude);
+        console.log("緯度: " + location.longitude);
+        saveLocation(location.latitude, location.longitude);
+
+            },
+    function (error) {
+        $('#distance').text("請允許裝置定位");
+        console.log(error.message);
+    }
+);
+
+/**
+ * 计算两点之间的距离（单位：公里）
+ * @param {number} lat1 - A点的纬度
+ * @param {number} lon1 - A点的经度
+ * @param {number} lat2 - B点的纬度
+ * @param {number} lon2 - B点的经度
+ * @returns {number} - 两点之间的距离（公里）
+ */
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    // 地球半径（单位：公里）
+    var R = 6371;
+
+    // 将角度转换为弧度
+    var dLat = deg2rad(lat2 - lat1);
+    var dLon = deg2rad(lon2 - lon1);
+    
+    // 使用Haversine公式计算距离
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    var distance = R * c; // 以公里为单位的距离
+    
+    return Math.round(distance);
+}
+
+/**
+ * 将角度转换为弧度
+ * @param {number} deg - 角度
+ * @returns {number} - 弧度
+ */
+function deg2rad(deg) {
+    return deg * (Math.PI / 180);
+}
+
+// 示例用法
+// var lat1 = 34.052235; // A点的纬度
+// var lon1 = -118.243683; // A点的经度
+// var lat2 = 36.169941; // B点的纬度
+// var lon2 = -115.139832; // B点的经度
+
+// var distance = calculateDistance(lat1, lon1, lat2, lon2);
+// console.log("两点之间的距离: " + distance.toFixed(2) + " 公里");
+</script>
+
+<script src="https://meet-sugar.net/common/new/js/_home.js"></script>
+<script src="https://meet-sugar.net/common/new/js/_nav.js"></script>
+<script src="https://meet-sugar.net/common/new/js/_scroll.js?v=1747032050"></script>
+
+<script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function () {
+    var tab = document.querySelector(".home-mobile-tab");
+    var parent = tab.parentElement; 
+    var tabWidth = tab.offsetWidth; 
+    var tabInitialOffsetTop; // 记录元素初始位置
+
+    function getTabOffsetTop() {
+        return tab.getBoundingClientRect().top + window.scrollY; 
+    }
+
+    // 在页面加载时记录元素的初始位置
+    tabInitialOffsetTop = getTabOffsetTop();
+
+    window.addEventListener("scroll", function () {
+        if (window.innerWidth <= 1023) { 
+            var currentScrollY = window.scrollY;
+
+            if (currentScrollY >= tabInitialOffsetTop && !tab.classList.contains("fixed-tab")) {
+                tab.classList.add("fixed-tab");
+                tab.style.width = tabWidth + "px"; 
+                tab.style.left = parent.getBoundingClientRect().left + "px"; 
+            } 
+            else if (currentScrollY < tabInitialOffsetTop && tab.classList.contains("fixed-tab")) {
+                tab.classList.remove("fixed-tab");
+                tab.style.width = ""; 
+                tab.style.left = ""; 
+            }
+        }
+    });
+
+    $('.scroll-top').click(function(){
+        if (tab.classList.contains("fixed-tab")) {
+            // 平滑滚动到初始位置
+            window.scrollTo({
+                top: tabInitialOffsetTop - 10,
+                behavior: 'smooth'
+            });
+
+            if($(this).hasClass('type-recommend')) {
+                setTimeout(function(){
+                    $('#recommend').click();
+                }, 500);
+            }
+            if($(this).hasClass('type-active')) {
+                setTimeout(function(){
+                    $('#active').click();
+                }, 500);
+            }
+            if($(this).hasClass('type-new')) {
+                setTimeout(function(){
+                    $('#new').click();
+                }, 500);
+            }
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (!tab.classList.contains("fixed-tab")) {
+            tabWidth = tab.offsetWidth; 
+            // 重新计算初始位置
+            tabInitialOffsetTop = getTabOffsetTop();
+        }
+    });
+});
+
+function homeAjax(tab, refresh = "")
+{
+    var loading = SwalAlert.loading("刷新中");
+    var url  = "https://meet-sugar.net/member/home/search/ajax";
+
+    var type = "recommend";
+    if(refresh != "") {
+        type = refresh;
+    } else {
+        type = $(tab).attr('id');
+    }
+
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: {
+            type: type
+        },
+        success: function(result)
+        {
+            loading.close();
+            result=$.parseJSON(result);
+            if(result['code']==1)
+            {
+                // $('.nav-link.js-scroll-trigger.pointer').removeClass('active');
+                // $('.dropdown-item.tab').removeClass('active');
+                // $('#' + type).addClass('active');
+                // $('#m_' + type).addClass('active');
+                // $('.refresh-btn').attr('search-type', type);
+
+                $('#'+type+'-box').html(result['response']);
+            } else {
+                SwalAlert.SwalWarning(result.message);
+            }
+        }
+    });
+}
+
+function moreAjax(btn)
+{
+    homeAjax(btn, $(btn).attr('current-type'));
+}
+
+// $('#active').trigger('click');
+// $('#new').trigger('click');
+
+var position = "recommend";
+$('.type-'+position).click();
+
+function setPosition(pos)
+{
+    var date = new Date();
+    date.setTime(date.getTime() + (10 * 60 * 1000)); // 10 分鐘
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = "position=" + pos + "; " + expires + "; path=/";
+    $('#search-more').attr('current-type', pos);
+}
+
+var email_verify = "1";
+if(email_verify != 1) {
+    if(!document.cookie.includes('email_verify_notice')) {
+        let date = new Date();
+        date.setTime(date.getTime() + (5 * 60 * 1000));
+        let expires = "expires=" + date.toUTCString();
+        document.cookie = "email_verify_notice=1;" + expires + ";path=/";
+
+        SwalAlert.SwalWarning("提醒您，尚未完成Email驗證", '如需重新發送，請至"進階設定"重新發送');
+    }
+}
+
+// $(document).keydown(function(event) {
+//     event.preventDefault();
+//     if (event.keyCode === 116) {
+//         clearSearchCookie();
+//         setTimeout(function(){
+//             location.reload();
+//         }, 500);
+//     }
+// });
+// 監聽 touchmove 事件來偵測下拉開始
+// document.addEventListener('touchmove', function(e) {
+//     if (window.scrollY === 0) {  // 確保在頁面頂部
+//         // console.log('開始下拉...');
+//         clearSearchCookie();
+//     }
+// }, { passive: true });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const perfEntries = performance.getEntriesByType("navigation")[0];
+    if (perfEntries) {
+        if (perfEntries.type === "reload") {
+            clearSearchCookie();
+            window.location.href='https://meet-sugar.net/member/home';
+        }
+    }
+});
+
+function clearSearchCookie()
+{
+    document.cookie = "recommend_search_buffer=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "active_search_buffer=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "new_search_buffer=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+
+
+$(document).ready(function(){
+    showModal();
+});
+
+function showModal()
+{
+    var line_notify = "1";
+    var phone_verify = "0";
+    var verify_pic = "0";
+    var has_video = "0";
+    var sign_modal = "0";
+
+    if(sign_modal == 1) {
+        $('.day-btn').click();
+        return true;
+    }
+
+    if(line_notify == 0 && getCookie('line-modal') == "") {
+        $('.line-btn').click();
+        // setModalCookie('line-modal');
+        return true;
+    }
+    if(phone_verify == 0 && getCookie('phone-modal') == "") {
+        $('.phone-btn').click();
+        // setModalCookie('phone-modal');
+        return true;
+    }
+    if(mygender == 0 && (verify_pic == 0 || has_video == 0) && getCookie('user-photo-modal') == "") {
+        $('.user-photo-btn').click();
+        // setModalCookie('user-photo-modal');
+        return true;
+    }
+}
+
+function getCookie(name) {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.startsWith(name + "=")) {
+            return cookie.substring(name.length + 1);
+        }
+    }
+    return "";
+}
+
+function setModalCookie(name, value) {
+    var date = new Date();
+    date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // 24 小時
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + "; " + expires + "; path=/";
+}
+
+
+
+
+
+
+
+// Line notify Modal
+const line_modal = document.querySelectorAll('.line-modal');
+line_modal.forEach((modal) => {
+    modal.querySelectorAll('.m-clear-btn, .modal-btn, .modal-submit').forEach((btn) => {
+        // 當按鈕被點擊時，移除其對應 `modal` 的 `active` 類別，使其隱藏
+        btn.addEventListener('click', () => modal.classList.remove('active'));
+    });
+});
+
+// Phone Modal
+const phone_modal = document.querySelectorAll('.phone-modal');
+phone_modal.forEach((modal) => {
+    modal.querySelectorAll('.m-clear-btn, .modal-btn, .modal-submit').forEach((btn) => {
+        // 當按鈕被點擊時，移除其對應 `modal` 的 `active` 類別，使其隱藏
+        btn.addEventListener('click', () => modal.classList.remove('active'));
+    });
+});
+
+// user-photo-btn Modal
+const verify_pic_modal = document.querySelectorAll('.user-photo-modal');
+verify_pic_modal.forEach((modal) => {
+    modal.querySelectorAll('.m-clear-btn, .modal-btn, .modal-submit').forEach((btn) => {
+        // 當按鈕被點擊時，移除其對應 `modal` 的 `active` 類別，使其隱藏
+        btn.addEventListener('click', () => modal.classList.remove('active'));
+    });
+});
+
+// Daily Modal
+const daily = document.querySelectorAll('.day-modal');
+daily.forEach((modal) => {
+    modal.querySelectorAll('.m-clear-btn').forEach((btn) => {
+        // 當按鈕被點擊時，移除其對應 `modal` 的 `active` 類別，使其隱藏
+        btn.addEventListener('click', () => modal.classList.remove('active'));
+    });
+});
+
+function signin()
+{
+    $.ajax({
+        type: "GET",
+        url: "https://meet-sugar.net/member/daily/signin",
+        data: {},
+        success: function(result)
+        {
+            result=$.parseJSON(result);
+            if(result['code']==1)
+            {
+                $('#p-exp-title').text(result['title']);
+                $('#p-exp').text(result['exp']);
+                $('#p-day').text(result['day']);
+
+                $('.day-clear-btn').click();
+
+                $('.mail-btn').click();
+
+                temMark.classList.add('active');
+                temMark2.classList.add('active');
+
+                setTimeout(() => {
+                    temMark.classList.remove('active');
+                    temMark2.classList.remove('active');
+                }, 3000);
+
+            } else {
+                SwalAlert.SwalWarning(result.message);
+            }
+        }
+    });
+}
+
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"93e7ed4a58c834dd","version":"2025.4.0-1-g37f21b1","r":1,"token":"417e683726094886898891466e742298","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+
+</html>

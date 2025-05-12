@@ -1,0 +1,30 @@
+.inp-group-item.personal .inp-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .inp-group-item.personal .inp-group {
+    display: block;
+  }
+  .inp-group-item.personal .inp-tit {
+    display: block;
+  }
+  .inp-group-item.personal .inp-cont {
+    padding: 0.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #settin-form {
+    padding: 0;
+  }
+  .inp-cont {
+    font-size: 0.875rem;
+  }
+}
+/*# sourceMappingURL=settiing-rwd.css.map */
