@@ -1474,6 +1474,163 @@ body.search-body .page-content a.search-user .card-data .cd-online p {
   right: 0;
   transform: translateX(50%);
 }
+
+/* 推薦點數 */
+.reocmmend {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.recommend_head {
+  background-color: #ffd0e6;
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.recommend_dashboard {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbbcca;
+}
+.recommend_dashboard_item {
+  width: 33.3333%;
+  text-align: center;
+}
+.recommend_dashboard_item h5 {
+  font-size: 16px;
+  margin: 0 !important;
+  color: #6d3e54;
+}
+.recommend_dashboard_item p {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0 !important; 
+  color: #cf2f77;
+}
+.recommend_num {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.recommend_num_title {
+  color: var(--input-gray);
+  font-weight: 700;
+}
+.recommend_num_content {
+  color: var(--input-gray);
+}
+.recommend_exchange {
+  margin-bottom: 40px;
+}
+.recommend_exchange h4 {
+  margin-bottom: 15px;
+}
+.recommend_exchange_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommend_exchange_content select {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1.5px solid #D83469;
+  color: #333;
+}
+.recommend_exchange_spend {
+  display: flex;
+  align-items: center;
+}
+.recommend_exchange_spend span {
+  color: #444;
+}
+.recommend_exchange_spend span.highlight {
+  color: #D83469;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.recommend_exchange_spend .notenough {
+  font-size: 12px;
+  padding: 2px 4px;
+  background-color: #D83469;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.recommend_exchange_spend button {
+  padding: 10px 25px;
+  border-radius: 100px;
+  background: linear-gradient(to bottom, #ee9fc2 0%, #D11569 100%);
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: #fff;
+}
+.recommend_reord h4 {
+  margin-bottom: 15px;
+}
+.recommend_reord table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.recommend_reord table td {
+  padding: 15px;
+}
+.recommend_reord_reason {
+  color: #333;
+  width: calc(100% - 180px);
+  padding-right: 20px;
+}
+.recommend_reord_date {
+  font-size: 14px;
+  text-align: right;
+  width: 120px;
+}
+.recommend_reord_num {
+  font-size: 18px;
+  font-weight: 900;
+  color: #D83469;
+  width: 60px;
+  text-align: center;
+}
+.recommend_reord_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--bg-color);
+}
+@media screen and (max-width: 575px) {
+  .recommend_head {
+    padding: 20px;
+  }
+  .recommend_exchange_content {
+    display: block;
+  }
+  .recommend_exchange_spend {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+  .recommend_dashboard_item h5 {
+    font-size: 14px;
+  }
+  .recommend_reord_date {
+    order: 1;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .recommend_reord_num {
+    order: 3;
+  }
+  .recommend_reord_reason {
+    order: 2;
+    width: calc(100% - 60px);
+  }
+}
+
 /*# sourceMappingURL=settiing-rwd.css.map */
 
 /*# sourceMappingURL=main2025.css.map */
